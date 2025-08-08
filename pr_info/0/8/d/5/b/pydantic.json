@@ -16,6 +16,25 @@
         "migrator_version",
         "name"
       ]
+    },
+    {
+      "PR": {
+        "__lazy_json__": "pr_json/a56350aa-dabc-43fc-8680-89864fb4d62d.json"
+      },
+      "data": {
+        "bot_rerun": false,
+        "branch": "1.x",
+        "migrator_name": "NoarchPythonMinMigrator",
+        "migrator_version": 1,
+        "name": "noarch_python_min"
+      },
+      "keys": [
+        "bot_rerun",
+        "branch",
+        "migrator_name",
+        "migrator_version",
+        "name"
+      ]
     }
   ],
   "bad": false,
