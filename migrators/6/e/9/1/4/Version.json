@@ -30,7 +30,20 @@
         },
         "links": [],
         "multigraph": false,
-        "nodes": []
+        "nodes": [
+          {
+            "id": "azure-cli-core",
+            "payload": {
+              "__lazy_json__": "node_attrs/azure-cli-core.json"
+            }
+          },
+          {
+            "id": "pydantic",
+            "payload": {
+              "__lazy_json__": "node_attrs/pydantic.json"
+            }
+          }
+        ]
       }
     },
     "graph": {
@@ -52,7 +65,20 @@
         },
         "links": [],
         "multigraph": false,
-        "nodes": []
+        "nodes": [
+          {
+            "id": "azure-cli-core",
+            "payload": {
+              "__lazy_json__": "node_attrs/azure-cli-core.json"
+            }
+          },
+          {
+            "id": "pydantic",
+            "payload": {
+              "__lazy_json__": "node_attrs/pydantic.json"
+            }
+          }
+        ]
       }
     },
     "piggy_back_migrations": [
