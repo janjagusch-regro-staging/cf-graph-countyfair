@@ -1,0 +1,25 @@
+{
+  "base": {
+    "repo": {
+      "name": "azure-cli-core-feedstock"
+    }
+  },
+  "closed_at": null,
+  "created_at": "2025-08-08T14:09:27Z",
+  "draft": false,
+  "e_tag": "\"c5b4cac5e61172f346609b002f34876cc2aaee7f75befd86cc778c2b4a617df8\"",
+  "head": {
+    "ref": "2.76.0_h9ed3a6"
+  },
+  "html_url": "https://github.com/janjagusch-conda-forge-bot-staging/azure-cli-core-feedstock/pull/11",
+  "id": 2730914000,
+  "labels": [],
+  "last_modified": null,
+  "mergeable": null,
+  "mergeable_state": "unknown",
+  "merged": false,
+  "merged_at": null,
+  "number": 11,
+  "state": "open",
+  "updated_at": "2025-08-08T14:09:27Z"
+}
