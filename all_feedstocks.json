@@ -1,0 +1,13 @@
+{
+  "active": [
+    "azure-cli-core",
+    "conda-forge-pinning",
+    "pydantic"
+  ],
+  "archived": [],
+  "default_branches": {
+    "azure-cli-core": "main",
+    "conda-forge-pinning": "main",
+    "pydantic": "main"
+  }
+}
