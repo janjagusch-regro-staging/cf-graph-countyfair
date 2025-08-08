@@ -1,5 +1,27 @@
 {
-  "bad": false,
-  "pre_pr_migrator_attempts": {},
-  "pre_pr_migrator_status": {}
+  "bad": {
+    "exception": "Error running 'conda-forge-tick-container migrate-feedstock --feedstock-name conda-forge-pinning --default-branch main --existing-feedstock-node-attrs - --log-level warning --kwargs {\n  \"hash_type\": \"sha256\"\n}' in container - error FileNotFoundError raised:\n2, 'No such file or directory'",
+    "traceback": [
+      "Traceback (most recent call last):",
+      "  File \"/opt/autotick-bot/conda_forge_tick/container_cli.py\", line 119, in _run_bot_task",
+      "    data = func(attrs=attrs, **kwargs)",
+      "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+      "  File \"/opt/autotick-bot/conda_forge_tick/container_cli.py\", line 231, in _migrate_feedstock",
+      "    data = run_migration_local(",
+      "           ^^^^^^^^^^^^^^^^^^^^",
+      "  File \"/opt/autotick-bot/conda_forge_tick/migration_runner.py\", line 269, in run_migration_local",
+      "    data[\"migrate_return_value\"] = migrator.migrate(",
+      "                                   ^^^^^^^^^^^^^^^^^",
+      "  File \"/opt/autotick-bot/conda_forge_tick/migrators/migration_yaml.py\", line 433, in migrate",
+      "    os.remove(f\"{self.name}.yaml\")",
+      "FileNotFoundError: [Errno 2] No such file or directory: 'poppler2507.yaml'",
+      ""
+    ]
+  },
+  "pre_pr_migrator_attempts": {
+    "poppler2507": 1
+  },
+  "pre_pr_migrator_status": {
+    "poppler2507": "bot error (<a href=\"https://github.com/regro/cf-scripts/actions/runs/GITHUB_RUN_ID_NOT_SET\">bot CI job</a>): main:\nTraceback (most recent call last):\n  File \"/opt/autotick-bot/conda_forge_tick/container_cli.py\", line 119, in _run_bot_task\n    data = func(attrs=attrs, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/autotick-bot/conda_forge_tick/container_cli.py\", line 231, in _migrate_feedstock\n    data = run_migration_local(\n           ^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/autotick-bot/conda_forge_tick/migration_runner.py\", line 269, in run_migration_local\n    data[\"migrate_return_value\"] = migrator.migrate(\n                                   ^^^^^^^^^^^^^^^^^\n  File \"/opt/autotick-bot/conda_forge_tick/migrators/migration_yaml.py\", line 433, in migrate\n    os.remove(f\"{self.name}.yaml\")\nFileNotFoundError: [Errno 2] No such file or directory: 'poppler2507.yaml'\n"
+  }
 }
