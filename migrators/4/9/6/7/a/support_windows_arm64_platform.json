@@ -1,0 +1,131 @@
+{
+  "__migrator__": true,
+  "args": [],
+  "class": "WinArm64",
+  "kwargs": {
+    "effective_graph": {
+      "__nx_digraph__": true,
+      "node_link_data": {
+        "directed": true,
+        "graph": {
+          "outputs_lut": {},
+          "strong_exports": {
+            "__set__": true,
+            "elements": [
+              "c_compiler_stub",
+              "c_stdlib_stub",
+              "cuda_compiler_stub",
+              "cxx_compiler_stub",
+              "fortran_compiler_stub"
+            ]
+          }
+        },
+        "links": [],
+        "multigraph": false,
+        "nodes": []
+      }
+    },
+    "graph": {
+      "__nx_digraph__": true,
+      "node_link_data": {
+        "directed": true,
+        "graph": {
+          "outputs_lut": {},
+          "strong_exports": {
+            "__set__": true,
+            "elements": [
+              "c_compiler_stub",
+              "c_stdlib_stub",
+              "cuda_compiler_stub",
+              "cxx_compiler_stub",
+              "fortran_compiler_stub"
+            ]
+          }
+        },
+        "links": [],
+        "multigraph": false,
+        "nodes": []
+      }
+    },
+    "name": "support windows arm64 platform",
+    "piggy_back_migrations": [
+      {
+        "__mini_migrator__": true,
+        "args": [],
+        "class": "CondaForgeYAMLCleanup",
+        "kwargs": {},
+        "name": "CondaForgeYAMLCleanup"
+      },
+      {
+        "__mini_migrator__": true,
+        "args": [],
+        "class": "UpdateCMakeArgsWinMigrator",
+        "kwargs": {},
+        "name": "UpdateCMakeArgsWinMigrator"
+      },
+      {
+        "__mini_migrator__": true,
+        "args": [],
+        "class": "GuardTestingWinMigrator",
+        "kwargs": {},
+        "name": "GuardTestingWinMigrator"
+      },
+      {
+        "__mini_migrator__": true,
+        "args": [],
+        "class": "CrossRBaseWinMigrator",
+        "kwargs": {},
+        "name": "CrossRBaseWinMigrator"
+      },
+      {
+        "__mini_migrator__": true,
+        "args": [],
+        "class": "CrossPythonMigrator",
+        "kwargs": {},
+        "name": "CrossPythonMigrator"
+      },
+      {
+        "__mini_migrator__": true,
+        "args": [],
+        "class": "NoCondaInspectMigrator",
+        "kwargs": {},
+        "name": "NoCondaInspectMigrator"
+      },
+      {
+        "__mini_migrator__": true,
+        "args": [],
+        "class": "MPIPinRunAsBuildCleanup",
+        "kwargs": {},
+        "name": "MPIPinRunAsBuildCleanup"
+      },
+      {
+        "__mini_migrator__": true,
+        "args": [],
+        "class": "CombineV1ConditionsMigrator",
+        "kwargs": {},
+        "name": "CombineV1ConditionsMigrator"
+      }
+    ],
+    "pr_limit": 5,
+    "target_packages": {
+      "__set__": true,
+      "elements": [
+        "conda",
+        "conda-build",
+        "conda-deny",
+        "conda-forge-ci-setup",
+        "conda-mirror",
+        "mamba",
+        "pixi",
+        "pixi-diff",
+        "pixi-inject",
+        "pixi-pack",
+        "python",
+        "rattler-build",
+        "rattler-index"
+      ]
+    },
+    "total_graph": null
+  },
+  "name": "support_windows_arm64_platform"
+}
