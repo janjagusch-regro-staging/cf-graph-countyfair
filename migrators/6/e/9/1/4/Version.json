@@ -29,7 +29,14 @@
         },
         "links": [],
         "multigraph": false,
-        "nodes": []
+        "nodes": [
+          {
+            "id": "fastapi",
+            "payload": {
+              "__lazy_json__": "node_attrs/fastapi.json"
+            }
+          }
+        ]
       }
     },
     "graph": {
@@ -51,7 +58,14 @@
         },
         "links": [],
         "multigraph": false,
-        "nodes": []
+        "nodes": [
+          {
+            "id": "fastapi",
+            "payload": {
+              "__lazy_json__": "node_attrs/fastapi.json"
+            }
+          }
+        ]
       }
     },
     "piggy_back_migrations": [
