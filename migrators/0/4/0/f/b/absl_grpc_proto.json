@@ -1,0 +1,188 @@
+{
+  "__migrator__": true,
+  "args": [
+    "__migrator:\n  build_number: 1\n  commit_message: Rebuild for libabseil 20250127, libgrpc 1.71 & libprotobuf 5.29.3\n  kind: version\n  migration_number: 1\n  # paused intentionally because the pinning was updated,\n  # but need to keep this file around, see below\n  paused: true\n  exclude:\n    - abseil-cpp\n    - grpc-cpp\n    - libprotobuf\n    - protobuf\n    - re2\nlibabseil:\n- 20250127\nlibgrpc:\n- \"1.71\"\nlibprotobuf:\n- 5.29.3\n# we need to leave this migration open until we're ready to move the global baseline, see\n# https://github.com/conda-forge/conda-forge.github.io/issues/2467; grpc 1.70 requires 10.14,\n# see https://github.com/grpc/grpc/commit/14ac94d923b80650e0df55bed17be5efa0e4becd\nc_stdlib_version:   # [osx and x86_64]\n  - 10.14           # [osx and x86_64]\nmigrator_ts: 1741118046.5882597\n",
+    "absl_grpc_proto"
+  ],
+  "class": "MigrationYaml",
+  "kwargs": {
+    "automerge": false,
+    "build_number": 1,
+    "bump_number": 1,
+    "check_solvable": false,
+    "commit_message": "Rebuild for libabseil 20250127, libgrpc 1.71 & libprotobuf 5.29.3",
+    "conda_forge_yml_patches": null,
+    "cycles": {
+      "__set__": true,
+      "elements": []
+    },
+    "effective_graph": {
+      "__nx_digraph__": true,
+      "node_link_data": {
+        "directed": true,
+        "graph": {
+          "outputs_lut": {},
+          "strong_exports": {
+            "__set__": true,
+            "elements": [
+              "c_compiler_stub",
+              "c_stdlib_stub",
+              "cuda_compiler_stub",
+              "cxx_compiler_stub",
+              "fortran_compiler_stub"
+            ]
+          }
+        },
+        "links": [],
+        "multigraph": false,
+        "nodes": [
+          {
+            "id": "conda-forge-pinning",
+            "payload": {
+              "__lazy_json__": "node_attrs/conda-forge-pinning.json"
+            }
+          }
+        ]
+      }
+    },
+    "exclude": [
+      "abseil-cpp",
+      "grpc-cpp",
+      "libprotobuf",
+      "protobuf",
+      "re2"
+    ],
+    "force_pr_after_solver_attempts": 10,
+    "graph": {
+      "__nx_digraph__": true,
+      "node_link_data": {
+        "directed": true,
+        "graph": {
+          "outputs_lut": {},
+          "strong_exports": {
+            "__set__": true,
+            "elements": [
+              "c_compiler_stub",
+              "c_stdlib_stub",
+              "cuda_compiler_stub",
+              "cxx_compiler_stub",
+              "fortran_compiler_stub"
+            ]
+          }
+        },
+        "links": [],
+        "multigraph": false,
+        "nodes": [
+          {
+            "id": "conda-forge-pinning",
+            "payload": {
+              "__lazy_json__": "node_attrs/conda-forge-pinning.json"
+            }
+          }
+        ]
+      }
+    },
+    "ignored_deps_per_node": null,
+    "kind": "version",
+    "longterm": false,
+    "migration_number": 1,
+    "package_names": {
+      "__set__": true,
+      "elements": []
+    },
+    "paused": true,
+    "piggy_back_migrations": [
+      {
+        "__mini_migrator__": true,
+        "args": [],
+        "class": "CrossCompilationForARMAndPower",
+        "kwargs": {},
+        "name": "crosscompilationforarmandpower"
+      },
+      {
+        "__mini_migrator__": true,
+        "args": [],
+        "class": "StdlibMigrator",
+        "kwargs": {},
+        "name": "stdlibmigrator"
+      },
+      {
+        "__mini_migrator__": true,
+        "args": [],
+        "class": "CondaForgeYAMLCleanup",
+        "kwargs": {},
+        "name": "condaforgeyamlcleanup"
+      },
+      {
+        "__mini_migrator__": true,
+        "args": [],
+        "class": "Jinja2VarsCleanup",
+        "kwargs": {},
+        "name": "jinja2varscleanup"
+      },
+      {
+        "__mini_migrator__": true,
+        "args": [],
+        "class": "DuplicateLinesCleanup",
+        "kwargs": {},
+        "name": "duplicatelinescleanup"
+      },
+      {
+        "__mini_migrator__": true,
+        "args": [],
+        "class": "PipMigrator",
+        "kwargs": {},
+        "name": "pipmigrator"
+      },
+      {
+        "__mini_migrator__": true,
+        "args": [],
+        "class": "LicenseMigrator",
+        "kwargs": {},
+        "name": "licensemigrator"
+      },
+      {
+        "__mini_migrator__": true,
+        "args": [],
+        "class": "ExtraJinja2KeysCleanup",
+        "kwargs": {},
+        "name": "extrajinja2keyscleanup"
+      },
+      {
+        "__mini_migrator__": true,
+        "args": [],
+        "class": "NoCondaInspectMigrator",
+        "kwargs": {},
+        "name": "nocondainspectmigrator"
+      },
+      {
+        "__mini_migrator__": true,
+        "args": [],
+        "class": "MPIPinRunAsBuildCleanup",
+        "kwargs": {},
+        "name": "mpipinrunasbuildcleanup"
+      },
+      {
+        "__mini_migrator__": true,
+        "args": [],
+        "class": "PyPIOrgMigrator",
+        "kwargs": {},
+        "name": "pypiorgmigrator"
+      },
+      {
+        "__mini_migrator__": true,
+        "args": [],
+        "class": "CombineV1ConditionsMigrator",
+        "kwargs": {},
+        "name": "combinev1conditionsmigrator"
+      }
+    ],
+    "pr_limit": 2,
+    "top_level": {
+      "__set__": true,
+      "elements": []
+    },
+    "total_graph": null
+  },
+  "name": "absl_grpc_proto"
+}
