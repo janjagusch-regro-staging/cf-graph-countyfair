@@ -34,14 +34,7 @@
         },
         "links": [],
         "multigraph": false,
-        "nodes": [
-          {
-            "id": "conda-forge-pinning",
-            "payload": {
-              "__lazy_json__": "node_attrs/conda-forge-pinning.json"
-            }
-          }
-        ]
+        "nodes": []
       }
     },
     "force_pr_after_solver_attempts": 10,
@@ -64,14 +57,7 @@
         },
         "links": [],
         "multigraph": false,
-        "nodes": [
-          {
-            "id": "conda-forge-pinning",
-            "payload": {
-              "__lazy_json__": "node_attrs/conda-forge-pinning.json"
-            }
-          }
-        ]
+        "nodes": []
       }
     },
     "ignored_deps_per_node": null,

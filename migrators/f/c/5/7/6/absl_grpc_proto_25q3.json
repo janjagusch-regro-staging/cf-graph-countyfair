@@ -35,14 +35,7 @@
         },
         "links": [],
         "multigraph": false,
-        "nodes": [
-          {
-            "id": "conda-forge-pinning",
-            "payload": {
-              "__lazy_json__": "node_attrs/conda-forge-pinning.json"
-            }
-          }
-        ]
+        "nodes": []
       }
     },
     "exclude": [
@@ -75,14 +68,7 @@
         },
         "links": [],
         "multigraph": false,
-        "nodes": [
-          {
-            "id": "conda-forge-pinning",
-            "payload": {
-              "__lazy_json__": "node_attrs/conda-forge-pinning.json"
-            }
-          }
-        ]
+        "nodes": []
       }
     },
     "ignored_deps_per_node": null,
