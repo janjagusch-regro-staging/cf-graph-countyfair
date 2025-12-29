@@ -1,6 +1,36 @@
 {
-  "bad": false,
-  "pre_pr_migrator_attempt_ts": {},
-  "pre_pr_migrator_attempts": {},
-  "pre_pr_migrator_status": {}
+  "bad": {
+    "exception": "[Errno 2] No such file or directory: 'occt793.yaml'",
+    "traceback": [
+      "Traceback (most recent call last):",
+      "  File \"/Users/janjagusch/Projects/personal/cf-scripts/conda_forge_tick/auto_tick.py\", line 820, in _run_migrator_on_feedstock_branch",
+      "    migrator_uid, pr_json = run_with_tmpdir(",
+      "                            ^^^^^^^^^^^^^^^^",
+      "  File \"/Users/janjagusch/Projects/personal/cf-scripts/conda_forge_tick/auto_tick.py\", line 515, in run_with_tmpdir",
+      "    return run(",
+      "           ^^^^",
+      "  File \"/Users/janjagusch/Projects/personal/cf-scripts/conda_forge_tick/auto_tick.py\", line 602, in run",
+      "    migration_run_data = run_migration(",
+      "                         ^^^^^^^^^^^^^^",
+      "  File \"/Users/janjagusch/Projects/personal/cf-scripts/conda_forge_tick/migration_runner.py\", line 83, in run_migration",
+      "    return run_migration_local(",
+      "           ^^^^^^^^^^^^^^^^^^^^",
+      "  File \"/Users/janjagusch/Projects/personal/cf-scripts/conda_forge_tick/migration_runner.py\", line 270, in run_migration_local",
+      "    data[\"migrate_return_value\"] = migrator.migrate(",
+      "                                   ^^^^^^^^^^^^^^^^^",
+      "  File \"/Users/janjagusch/Projects/personal/cf-scripts/conda_forge_tick/migrators/migration_yaml.py\", line 437, in migrate",
+      "    os.remove(f\"{self.name}.yaml\")",
+      "FileNotFoundError: [Errno 2] No such file or directory: 'occt793.yaml'",
+      ""
+    ]
+  },
+  "pre_pr_migrator_attempt_ts": {
+    "occt793": 1767025076
+  },
+  "pre_pr_migrator_attempts": {
+    "occt793": 1
+  },
+  "pre_pr_migrator_status": {
+    "occt793": "bot error (<a href=\"https://github.com/regro/cf-scripts/actions/runs/GITHUB_RUN_ID_NOT_SET\">bot CI job</a>): main:\nTraceback (most recent call last):\n  File \"/Users/janjagusch/Projects/personal/cf-scripts/conda_forge_tick/auto_tick.py\", line 820, in _run_migrator_on_feedstock_branch\n    migrator_uid, pr_json = run_with_tmpdir(\n                            ^^^^^^^^^^^^^^^^\n  File \"/Users/janjagusch/Projects/personal/cf-scripts/conda_forge_tick/auto_tick.py\", line 515, in run_with_tmpdir\n    return run(\n           ^^^^\n  File \"/Users/janjagusch/Projects/personal/cf-scripts/conda_forge_tick/auto_tick.py\", line 602, in run\n    migration_run_data = run_migration(\n                         ^^^^^^^^^^^^^^\n  File \"/Users/janjagusch/Projects/personal/cf-scripts/conda_forge_tick/migration_runner.py\", line 83, in run_migration\n    return run_migration_local(\n           ^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/janjagusch/Projects/personal/cf-scripts/conda_forge_tick/migration_runner.py\", line 270, in run_migration_local\n    data[\"migrate_return_value\"] = migrator.migrate(\n                                   ^^^^^^^^^^^^^^^^^\n  File \"/Users/janjagusch/Projects/personal/cf-scripts/conda_forge_tick/migrators/migration_yaml.py\", line 437, in migrate\n    os.remove(f\"{self.name}.yaml\")\nFileNotFoundError: [Errno 2] No such file or directory: 'occt793.yaml'\n"
+  }
 }
