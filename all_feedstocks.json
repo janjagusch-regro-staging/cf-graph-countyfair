@@ -1,0 +1,11 @@
+{
+  "active": [
+    "conda-forge-pinning",
+    "dominodatalab"
+  ],
+  "archived": [],
+  "default_branches": {
+    "conda-forge-pinning": "main",
+    "dominodatalab": "main"
+  }
+}
